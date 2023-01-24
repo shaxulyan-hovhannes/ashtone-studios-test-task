@@ -1,0 +1,25 @@
+@use './header/header.scss';
+@use './main_section/maIn_section.scss';
+@use './nav/nav.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --padding-x: 20%;
+    --divider-color: #E9E9E9;
+    --disabled-color: #969696;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Medium.ttf')
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}

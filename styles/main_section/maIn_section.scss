@@ -1,0 +1,42 @@
+main {
+    padding: 0 var(--padding-x);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+    justify-content: space-between;
+    align-content: space-between;
+
+    .flex_item {
+        width: calc(33% - 25px);
+        height: 300px;
+        border: 1px solid red;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    main {
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 10%;
+
+        .flex_item {
+            width: calc(50% - 25px);
+            height: 300px;
+            border: 1px solid red;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        .flex_item {
+            width: calc(100% - 25px);
+            height: 300px;
+            border: 1px solid red;
+        }
+    }
+}
